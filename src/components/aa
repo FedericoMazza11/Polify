@@ -1,0 +1,13 @@
+            <li>
+              <div className="songIcon">
+                <NoteIcon className="noteI" />
+                <PlayIcon className="playI" />
+              </div>
+              <div className="songDetails">
+                <h3>{category.track.name}</h3>
+                <span>{category.track.artists.map(artista => ( <p className="subText">{artista.name}</p> ))}{category.track.album.name}</span>
+              </div>
+              <div className="songTime">
+                <span>4:07</span>
+              </div>
+            </li>
