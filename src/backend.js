@@ -10,7 +10,6 @@ app.use(express.json());
 app.use(cookieParser('r767'));
 const oneDay = 1000 * 60 * 60 * 24;
 app.use(session({
-    secret: "r767",
     saveUninitialized:true,
     cookie: { maxAge: oneDay,
     httpOnly: false,
@@ -44,5 +43,5 @@ app.use("/", require("./routes/user"));
 
 
 app.listen(3001, function() {
-	console.log("Port: 3001")
-})
+	console.log("Port: 3001");
+});
