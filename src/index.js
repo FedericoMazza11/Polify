@@ -12,13 +12,6 @@ export default axios.create({
     "Content-type": "application/json"
   }
 });
-console.log("hola")
-axios.post('http://localhost/api/user', {
-  title: 'Test'
-}).then(console.log("a"));
-
-
-
 
 ReactDOM.render(
   <React.StrictMode>
