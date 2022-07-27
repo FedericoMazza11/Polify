@@ -7,7 +7,7 @@ var session = require("express-session");
 
 app.use(cors());
 app.use(express.json());
-app.use(cookieParser('r767'));
+app.use(cookieParser();
 const oneDay = 1000 * 60 * 60 * 24;
 app.use(session({
     saveUninitialized:true,
