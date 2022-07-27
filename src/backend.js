@@ -44,5 +44,5 @@ app.use("/", require("./routes/user"));
 
 
 app.listen(3001, function() {
-	console.log("PUERTO 30001")
+	console.log("Port: 3001")
 })
